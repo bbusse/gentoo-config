@@ -2,6 +2,7 @@ app-emulation/libvirt audit lxc policykit numa sasl virt-network zeroconf
 app-emulation/libvirt-glib python
 app-emulation/qemu aio caps fdt gtk usb usbredir numa opengl virgl vde vte virtfs
 app-text/ghostscript-gpl cups
+dev-libs/boost icu nls
 #dev-lang/rust system-llvm
 gui-wm/sway -swayidle
 media-libs/libepoxy X
@@ -17,7 +18,7 @@ media-video/libav tools vaapi vdpau X
 media-video/ffmpeg tools vaapi vdpau X
 media-video/pipewire bluetooth dbus flatpak gstreamer
 net-dns/dnsmasq script
-dev-libs/boost icu nls
+net-firewall/iptables nftables
 net-misc/spice-gtk gtk3 usbredir python
 net-wireless/bluez cups user-session
 net-wireless/hostapd netlink
