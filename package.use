@@ -28,6 +28,6 @@ sys-apps/dbus systemd dbus user-session X
 sys-fs/cryptsetup -udev
 sys-apps/systemd audit curl lzma gcrypt importd policykit qrcode xkb
 www-client/firefox dbus hwaccel system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
-x11-libs/cairo opengl X
+x11-libs/cairo -glib opengl X
 x11-libs/gtk+ X
 x11-libs/libxkbcommon X
