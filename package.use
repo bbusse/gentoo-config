@@ -5,6 +5,7 @@ app-text/ghostscript-gpl cups
 dev-libs/boost icu nls
 #dev-lang/rust system-llvm
 gui-wm/sway -swayidle
+media-libs/harfbuzz -introspection -glib
 media-libs/libepoxy X
 media-libs/libglvnd X
 media-libs/libsndfile minimal
