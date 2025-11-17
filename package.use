@@ -19,6 +19,7 @@ media-video/ffmpeg tools vaapi vdpau X
 media-video/pipewire bluetooth dbus flatpak gstreamer
 net-dns/dnsmasq script
 net-firewall/iptables nftables
+net-libs/nghttp2 -systemd
 net-misc/spice-gtk gtk3 usbredir python
 net-wireless/bluez cups user-session
 net-wireless/hostapd netlink
