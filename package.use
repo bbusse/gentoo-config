@@ -3,9 +3,11 @@ app-emulation/libvirt-glib python
 app-emulation/qemu aio caps fdt gtk usb usbredir numa opengl virgl vde vte virtfs
 app-text/ghostscript-gpl cups
 dev-libs/boost icu nls
+dev-python/pillow -truetype
 #dev-lang/rust system-llvm
 gui-wm/sway -swayidle
-media-libs/harfbuzz -introspection -glib
+media-libs/freetype harfbuzz
+media-libs/harfbuzz introspection glib
 media-libs/libepoxy X
 media-libs/libglvnd X
 media-libs/libsndfile minimal
@@ -28,6 +30,6 @@ sys-apps/dbus systemd dbus user-session X
 sys-fs/cryptsetup -udev
 sys-apps/systemd audit curl lzma gcrypt importd policykit qrcode xkb
 www-client/firefox dbus hwaccel system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
-x11-libs/cairo -glib opengl X
+x11-libs/cairo -glib opengl -X
 x11-libs/gtk+ X
 x11-libs/libxkbcommon X
