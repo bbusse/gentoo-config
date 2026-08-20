@@ -4,6 +4,8 @@ app-emulation/libvirt-glib ~arm64
 app-text/zathura **
 mail-client/aerc ~amd64
 media-sound/ncmpcpp **
+sys-cluster/k3s ~amd64 ~arm64
 sys-firmware/intel-microcode ~amd64
 x11-misc/i3status ~arm64
 x11-misc/py3status ~amd64
+x11-misc/vju ~amd64 ~arm64
