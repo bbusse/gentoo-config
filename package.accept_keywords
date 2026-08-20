@@ -9,3 +9,4 @@ sys-firmware/intel-microcode ~amd64
 x11-misc/i3status ~arm64
 x11-misc/py3status ~amd64
 x11-misc/vju ~amd64 ~arm64
+x11-terms/ghostty **
