@@ -2,6 +2,7 @@ app-admin/ansible-lint ~amd64
 app-emulation/diskimage-builder ~arm64
 app-emulation/libvirt-glib ~arm64
 app-text/zathura **
+gui-libs/gtk4-layer-shell ~arm64
 mail-client/aerc ~amd64
 media-sound/ncmpcpp **
 sys-cluster/k3s ~amd64 ~arm64
