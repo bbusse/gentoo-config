@@ -5,6 +5,7 @@ app-eselect/eselect-zig ~arm64
 app-text/zathura **
 dev-lang/zig-bin ~arm64
 gui-libs/gtk4-layer-shell ~arm64
+gui-wm/sway-pixman ~amd64 ~arm64
 mail-client/aerc ~amd64
 media-sound/ncmpcpp **
 sys-cluster/k3s ~amd64 ~arm64
