@@ -1,0 +1,17 @@
+# USE flags for guests running under qemu with virglrenderer (VIDEO_CARDS=virgl).
+# Applied by emerge.sh for the sway-virt flavour, mirroring how
+# package.use.hwaccel is applied for the sway (real hardware) flavour.
+#
+# VIDEO_CARDS is USE_EXPAND, so the flag on the package is video_cards_virgl.
+# Without it mesa ships only swrast/kms_swrast and the guest software-renders
+# even when the host offers a virtio-gpu.
+media-libs/mesa video_cards_virgl
+
+# wlroots needs a session backend to open the DRM device; without it sway
+# fails at startup with "Cannot create session: disabled at compile-time".
+gui-libs/wlroots session
+
+# libseat lives in sys-auth/seatd. With systemd it uses the logind backend,
+# so the seatd daemon does not need to run - but the package must be present
+# because wlroots links against libseat.
+sys-auth/seatd systemd

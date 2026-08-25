@@ -1,0 +1,14 @@
+# USE flags for the sway (real hardware) flavour on amd64.
+#
+# Currently unused: sway/amd64 is disabled in build-gentoo-stage4.yml. It
+# exists so re-enabling that leg does not silently give x86 hardware the
+# arm64 Mali drivers from package.use.hwaccel, which is what the previous
+# arch-blind copy would have done.
+#
+#   x230  Intel Ivy Bridge, HD Graphics 4000 -> crocus
+#
+# crocus, not i965: mesa removed the i965 driver in 22.0, and crocus is what
+# covers gen4 through gen7. iris only starts at gen8 (Broadwell), so it is
+# wrong for this machine. The kernel side is already there -
+# kernel-config-x230 has CONFIG_DRM_I915.
+media-libs/mesa video_cards_crocus

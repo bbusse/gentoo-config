@@ -1,1 +1,18 @@
-media-libs/mesa lima
+# USE flags for the sway (real hardware) flavour.
+#
+# One rootfs serves every arm64 board - gentoo-sway-pine64 reuses the sway
+# rootfs and only swaps kernel and partition layout - so mesa carries the
+# Gallium driver for each supported SoC. They coexist in one libgallium and
+# the driver is selected at runtime from the DRM device the board exposes.
+#
+#   pine64     Allwinner A64,   Mali-400 MP2 (Utgard)  -> lima
+#   rockpro64  Rockchip RK3399, Mali-T860 MP4 (Midgard) -> panfrost
+#
+# The matching kernel drivers are already in place: kernel-config-pine64 has
+# CONFIG_DRM_LIMA and CONFIG_DRM_SUN4I, kernel-config-rockpro64 has
+# CONFIG_DRM_PANFROST and CONFIG_DRM_ROCKCHIP.
+#
+# VIDEO_CARDS is USE_EXPAND, so the flag on the package is video_cards_<name>.
+# A bare "lima" is not a mesa USE flag - portage ignores it and mesa ends up
+# swrast-only, which is what this file previously did.
+media-libs/mesa video_cards_lima video_cards_panfrost
