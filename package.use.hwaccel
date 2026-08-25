@@ -16,3 +16,8 @@
 # A bare "lima" is not a mesa USE flag - portage ignores it and mesa ends up
 # swrast-only, which is what this file previously did.
 media-libs/mesa video_cards_lima video_cards_panfrost
+
+# mesa compiles panfrost's shaders through dev-util/mesa_clc, and
+# portage requires the flag on both packages
+# lima does not go through mesa_clc, so it is not listed
+dev-util/mesa_clc video_cards_panfrost
