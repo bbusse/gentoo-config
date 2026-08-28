@@ -13,6 +13,21 @@ media-libs/libglvnd X
 media-libs/libsndfile minimal
 media-libs/libvpx postproc
 media-libs/mesa X
+# The virgl Gallium driver, for guests running under qemu with
+# virglrenderer. This lives here rather than in a per-flavour file on
+# purpose: files like package.use.hwaccel are only applied by explicit
+# per-flavour branches, and that mapping is duplicated in
+# gentoo-build/emerge.sh and in image-builder. When the two drift nothing
+# errors - the rootfs just silently gets different USE flags, which is how
+# mesa ended up swrast-only in a disk image whose stage4 had virgl.
+# package.use is copied unconditionally by both, so it cannot be forgotten.
+# On real hardware this costs a few MB of unused driver, and means a
+# hardware image also boots usefully under qemu.
+media-libs/mesa video_cards_virgl
+# libseat's logind backend only hands out a session on a console attached to
+# seat0, which a serial console is not; builtin lets a root compositor open
+# the DRM device directly. Wanted on hardware too, for serial-console debug.
+sys-auth/seatd builtin
 media-fonts/noto X
 media-gfx/imagemagick fontconfig pango svg webp xml X
 media-sound/ncmpcpp clock curl outputs taglib visualizer
