@@ -8,6 +8,7 @@ media-fonts/noto
 #media-video/pipewire
 #sys-apps/flatpak
 x11-misc/py3status
+media-video/scream
 x11-misc/vju
 x11-terms/ghostty
 #www-client/firefox
