@@ -14,7 +14,7 @@
 #
 # VIDEO_CARDS is USE_EXPAND, so the flag on the package is video_cards_<name>.
 # A bare "lima" is not a mesa USE flag - portage ignores it and mesa ends up
-# swrast-only, which is what this file previously did.
+# swrast-only, which is what this file previously did
 media-libs/mesa video_cards_lima video_cards_panfrost
 
 # mesa compiles panfrost's shaders through dev-util/mesa_clc, and

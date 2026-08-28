@@ -10,5 +10,5 @@
 # crocus, not i965: mesa removed the i965 driver in 22.0, and crocus is what
 # covers gen4 through gen7. iris only starts at gen8 (Broadwell), so it is
 # wrong for this machine. The kernel side is already there -
-# kernel-config-x230 has CONFIG_DRM_I915.
+# kernel-config-x230 has CONFIG_DRM_I915
 media-libs/mesa video_cards_crocus

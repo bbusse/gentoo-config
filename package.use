@@ -22,11 +22,11 @@ media-libs/mesa X
 # mesa ended up swrast-only in a disk image whose stage4 had virgl.
 # package.use is copied unconditionally by both, so it cannot be forgotten.
 # On real hardware this costs a few MB of unused driver, and means a
-# hardware image also boots usefully under qemu.
+# hardware image also boots usefully under qemu
 media-libs/mesa video_cards_virgl
 # libseat's logind backend only hands out a session on a console attached to
 # seat0, which a serial console is not; builtin lets a root compositor open
-# the DRM device directly. Wanted on hardware too, for serial-console debug.
+# the DRM device directly. Wanted on hardware too, for serial-console debug
 sys-auth/seatd builtin
 media-fonts/noto X
 media-gfx/imagemagick fontconfig pango svg webp xml X
