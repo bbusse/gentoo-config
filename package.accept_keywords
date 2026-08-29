@@ -13,5 +13,7 @@ sys-firmware/intel-microcode ~amd64
 x11-misc/i3status ~arm64
 x11-misc/py3status ~amd64
 x11-misc/vju ~amd64 ~arm64
+media-video/scream ~amd64 ~arm64
+www-client/servoshell ~amd64 ~arm64
 x11-terms/ghostty **
 x11-terms/ghostty-terminfo **
