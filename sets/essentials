@@ -4,3 +4,4 @@ app-shells/gentoo-zsh-completions
 app-misc/tmux
 app-arch/unzip
 app-arch/xz-utils
+net-misc/keychain
