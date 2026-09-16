@@ -2,6 +2,7 @@ app-admin/pass
 app-containers/crun
 app-containers/podman
 #app-text/zathura-9999
+gui-apps/foot
 gui-apps/mako
 gui-wm/sway
 #mail-client/aerc
