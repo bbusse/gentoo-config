@@ -9,7 +9,7 @@ gui-wm/sway
 media-fonts/noto
 media-video/mpv
 #media-gfx/imagemagick
-#media-video/pipewire
+media-video/pipewire
 #sys-apps/flatpak
 x11-misc/py3status
 media-video/scream
