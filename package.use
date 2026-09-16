@@ -32,8 +32,7 @@ media-fonts/noto X
 media-gfx/imagemagick fontconfig pango svg webp xml X
 media-sound/ncmpcpp clock curl outputs taglib visualizer
 media-video/mpv drm -xscreensaver vaapi libmpv cli -xv
-media-video/libav tools vaapi vdpau X
-media-video/ffmpeg tools vaapi vdpau X
+media-video/ffmpeg tools vaapi
 media-video/pipewire bluetooth dbus flatpak gstreamer
 net-dns/dnsmasq script
 net-firewall/iptables nftables

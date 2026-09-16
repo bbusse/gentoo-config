@@ -1,9 +1,12 @@
 app-admin/pass
+app-containers/crun
+app-containers/podman
 #app-text/zathura-9999
 gui-apps/mako
 gui-wm/sway
 #mail-client/aerc
 media-fonts/noto
+media-video/mpv
 #media-gfx/imagemagick
 #media-video/pipewire
 #sys-apps/flatpak
