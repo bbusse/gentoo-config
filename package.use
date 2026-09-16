@@ -31,8 +31,8 @@ sys-auth/seatd builtin
 media-fonts/noto X
 media-gfx/imagemagick fontconfig pango svg webp xml X
 media-sound/ncmpcpp clock curl outputs taglib visualizer
-media-video/mpv drm -xscreensaver vaapi libmpv cli -xv
-media-video/ffmpeg tools vaapi
+media-video/mpv drm -xscreensaver vaapi libmpv cli pipewire -xv
+media-video/ffmpeg tools vaapi drm soc
 media-video/pipewire bluetooth dbus flatpak gstreamer
 net-dns/dnsmasq script
 net-firewall/iptables nftables
