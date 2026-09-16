@@ -4,9 +4,11 @@
 # next page. 835769: a 64-bit multiply-accumulate right after a load can
 # produce a wrong result. Both affect r0p4, which is the A64 in the pine64
 # and the little cores of the RK3399 in the rockpro64. The linker rewrites
-# the affected sequences through veneers; without this every arm64 binary
-# is correct on paper and occasionally wrong on that silicon. Root-caused
-# 2026-09-16 from libLLVM.so crashing at startup, see gentoo-build/ISSUES.md
+# sequences matching ARM's published description into adr or a veneer.
+# This is a mitigation, not a fix: the sequence that actually crashed
+# libLLVM.so on the pine64 (adrp at 0xff8 immediately followed by the
+# dependent load) is outside that description and is left alone. Details
+# and the reproducer in gentoo-build/ISSUES.md, 2026-09-16
 #
 # Applied via package.env rather than make.conf because make.conf is shared
 # with amd64, whose ld rejects these options. ${LDFLAGS} keeps the profile
