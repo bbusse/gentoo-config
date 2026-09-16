@@ -1,0 +1,14 @@
+# Linker workarounds for two Cortex-A53 errata. 843419: an ADRP in the last
+# two instruction slots of a 4K page (offset 0xff8/0xffc), followed shortly
+# by a load or store through its result, can compute the address of the
+# next page. 835769: a 64-bit multiply-accumulate right after a load can
+# produce a wrong result. Both affect r0p4, which is the A64 in the pine64
+# and the little cores of the RK3399 in the rockpro64. The linker rewrites
+# the affected sequences through veneers; without this every arm64 binary
+# is correct on paper and occasionally wrong on that silicon. Root-caused
+# 2026-09-16 from libLLVM.so crashing at startup, see gentoo-build/ISSUES.md
+#
+# Applied via package.env rather than make.conf because make.conf is shared
+# with amd64, whose ld rejects these options. ${LDFLAGS} keeps the profile
+# defaults. Packages that link through rustc get it through cc as well
+LDFLAGS="${LDFLAGS} -Wl,--fix-cortex-a53-843419 -Wl,--fix-cortex-a53-835769"
