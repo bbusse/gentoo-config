@@ -10,9 +10,12 @@ media-fonts/noto
 media-video/mpv
 #media-gfx/imagemagick
 media-video/pipewire
+sys-auth/rtkit
+net-dns/avahi
 #sys-apps/flatpak
 x11-misc/py3status
 media-video/scream
+net-misc/keychain
 x11-misc/vju
 x11-terms/ghostty
 #www-client/firefox

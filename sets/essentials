@@ -5,3 +5,4 @@ app-misc/tmux
 app-arch/unzip
 app-arch/xz-utils
 net-misc/keychain
+sys-fs/xfsprogs

@@ -21,3 +21,9 @@ media-libs/mesa video_cards_lima video_cards_panfrost
 # portage requires the flag on both packages
 # lima does not go through mesa_clc, so it is not listed
 dev-util/mesa_clc video_cards_panfrost
+
+# lima and panfrost do not use LLVM, only llvmpipe and the desktop GPUs do.
+# Without it libgallium stops linking libLLVM, which is what killed sway on
+# the pine64 at startup: LLVM's static initialisers hit erratum 843419 and
+# throw bad_alloc before sway runs
+media-libs/mesa -llvm
