@@ -10,6 +10,7 @@ media-fonts/noto
 media-video/mpv
 #media-gfx/imagemagick
 media-video/pipewire
+sys-apps/kmscon
 sys-auth/rtkit
 net-dns/avahi
 #sys-apps/flatpak
@@ -20,3 +21,4 @@ x11-misc/vju
 x11-terms/ghostty
 #www-client/firefox
 www-client/servoshell
+x11-libs/libnotify

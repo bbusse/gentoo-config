@@ -2,6 +2,7 @@ app-admin/ansible-lint ~amd64
 app-emulation/diskimage-builder ~arm64
 app-emulation/libvirt-glib ~arm64
 app-eselect/eselect-zig ~arm64
+app-shells/brush ~amd64 ~arm64
 app-text/zathura **
 dev-lang/zig-bin ~arm64
 gui-libs/gtk4-layer-shell ~arm64
@@ -18,3 +19,5 @@ media-libs/gst-rtsp-server ~arm64
 www-client/servoshell ~amd64 ~arm64
 x11-terms/ghostty **
 x11-terms/ghostty-terminfo **
+sys-apps/kmscon **
+dev-libs/libtsm **

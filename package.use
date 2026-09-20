@@ -34,3 +34,7 @@ www-client/firefox dbus hwaccel system-harfbuzz system-icu system-jpeg system-li
 x11-libs/cairo glib opengl X
 x11-libs/gtk+ X
 x11-libs/libxkbcommon X
+
+# pass -c copies the secret to the clipboard; wayland pulls wl-clipboard so it
+# uses wl-copy, X would pull xclip which is useless on a Wayland desktop
+app-admin/pass wayland -X
