@@ -19,5 +19,6 @@ media-libs/gst-rtsp-server ~arm64
 www-client/servoshell ~amd64 ~arm64
 x11-terms/ghostty **
 x11-terms/ghostty-terminfo **
+sys-boot/refind-bin ~amd64 ~arm64
 sys-apps/kmscon **
 dev-libs/libtsm **
