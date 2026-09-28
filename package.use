@@ -38,3 +38,5 @@ x11-libs/libxkbcommon X
 # pass -c copies the secret to the clipboard; wayland pulls wl-clipboard so it
 # uses wl-copy, X would pull xclip which is useless on a Wayland desktop
 app-admin/pass wayland -X
+# DDC/CI monitor brightness from the shell, udev rule and i2c group only
+app-misc/ddcutil user-permissions -dbus -usb-monitor -X

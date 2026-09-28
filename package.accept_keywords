@@ -24,5 +24,6 @@ media-sound/spotifyd **
 media-sound/shairport-sync ~amd64 ~arm64
 net-misc/nqptp ~amd64 ~arm64
 dev-libs/libconfig ~arm64
+app-misc/ddcutil ~amd64 ~arm64
 sys-apps/kmscon **
 dev-libs/libtsm **
