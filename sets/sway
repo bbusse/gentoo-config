@@ -15,6 +15,8 @@ net-dns/avahi
 #sys-apps/flatpak
 x11-misc/py3status
 media-video/scream
+media-sound/spotifyd
+media-sound/shairport-sync
 net-misc/keychain
 x11-misc/vju
 x11-terms/ghostty

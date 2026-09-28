@@ -20,5 +20,9 @@ www-client/servoshell ~amd64 ~arm64
 x11-terms/ghostty **
 x11-terms/ghostty-terminfo **
 sys-boot/refind-bin ~amd64 ~arm64
+media-sound/spotifyd **
+media-sound/shairport-sync ~amd64 ~arm64
+net-misc/nqptp ~amd64 ~arm64
+dev-libs/libconfig ~arm64
 sys-apps/kmscon **
 dev-libs/libtsm **
