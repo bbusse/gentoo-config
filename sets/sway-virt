@@ -18,6 +18,7 @@ media-video/scream
 media-sound/spotifyd
 media-sound/shairport-sync
 app-misc/ddcutil
+media-video/uxplay
 net-misc/keychain
 x11-misc/vju
 x11-terms/ghostty

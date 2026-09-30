@@ -20,7 +20,8 @@ media-sound/ncmpcpp clock curl outputs taglib visualizer
 media-video/mpv drm -xscreensaver vaapi libmpv cli pipewire -xv
 media-video/ffmpeg tools vaapi drm soc
 media-video/pipewire bluetooth dbus flatpak gstreamer ssl zeroconf
-net-dns/avahi -introspection -gtk -qt6 -bookmarks -python -autoipd -gdbm
+# mdnsresponder-compat for uxplay, which speaks the dns_sd API
+net-dns/avahi -introspection -gtk -qt6 -bookmarks -python -autoipd -gdbm mdnsresponder-compat
 net-dns/dnsmasq script
 net-firewall/iptables nftables
 net-libs/nghttp2 -systemd
@@ -40,3 +41,11 @@ x11-libs/libxkbcommon X
 app-admin/pass wayland -X
 # DDC/CI monitor brightness from the shell, udev rule and i2c group only
 app-misc/ddcutil user-permissions -dbus -usb-monitor -X
+# AirPlay mirroring under sway, no X11 and no vaapi on the arm boards.
+# uxplay renders through GStreamer's autovideosink, which needs waylandsink
+# from gst-plugins-bad and the wayland GL path in gst-plugins-base
+media-video/uxplay -vaapi -X
+media-libs/gst-plugins-base wayland egl gles2 -X
+media-libs/gst-plugins-bad wayland -X
+# Spotify Connect through pipewire-pulse like the other audio clients
+media-sound/spotifyd pulseaudio -alsa

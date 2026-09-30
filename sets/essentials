@@ -7,5 +7,6 @@ app-arch/xz-utils
 net-misc/keychain
 sys-fs/xfsprogs
 sys-boot/refind-bin
+sys-apps/gptfdisk
 sys-process/bottom
 app-shells/brush
