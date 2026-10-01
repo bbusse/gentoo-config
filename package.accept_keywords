@@ -24,7 +24,8 @@ media-sound/spotifyd **
 media-sound/shairport-sync ~amd64 ~arm64
 net-misc/nqptp ~amd64 ~arm64
 dev-libs/libconfig ~arm64
-app-misc/ddcutil ~amd64 ~arm64
+# live ebuild from the overlay until a ddcutil release handles SoC i2c buses
+app-misc/ddcutil **
 media-video/uxplay **
 sys-apps/kmscon **
 dev-libs/libtsm **
