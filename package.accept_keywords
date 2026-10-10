@@ -12,7 +12,7 @@ media-sound/ncmpcpp **
 sys-cluster/k3s ~amd64 ~arm64
 sys-firmware/intel-microcode ~amd64
 x11-misc/i3status ~arm64
-x11-misc/py3status ~amd64
+x11-misc/py3status **
 x11-misc/vju ~amd64 ~arm64
 media-video/scream ~amd64 ~arm64
 media-libs/gst-rtsp-server ~arm64
@@ -29,3 +29,9 @@ app-misc/ddcutil **
 media-video/uxplay **
 sys-apps/kmscon **
 dev-libs/libtsm **
+net-wireless/bluez-tools ~amd64 ~arm64
+media-sound/wiremix ~amd64 ~arm64
+x11-misc/i3status **
+x11-misc/py3status-datadog **
+dev-python/datadog-api-client ~amd64 ~arm64
+app-shells/powerline-go ~amd64 ~arm64

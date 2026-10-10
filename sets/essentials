@@ -5,6 +5,7 @@ app-misc/tmux
 app-arch/unzip
 app-arch/xz-utils
 net-misc/keychain
+net-misc/socat
 sys-fs/xfsprogs
 sys-boot/refind-bin
 sys-apps/gptfdisk

@@ -19,14 +19,15 @@ media-gfx/imagemagick fontconfig pango svg webp xml X
 media-sound/ncmpcpp clock curl outputs taglib visualizer
 media-video/mpv drm -xscreensaver vaapi libmpv cli pipewire -xv
 media-video/ffmpeg tools vaapi drm soc
-media-video/pipewire bluetooth dbus flatpak gstreamer ssl zeroconf
+media-video/pipewire bluetooth dbus flatpak gstreamer sound-server ssl zeroconf
 # mdnsresponder-compat for uxplay, which speaks the dns_sd API
 net-dns/avahi -introspection -gtk -qt6 -bookmarks -python -autoipd -gdbm mdnsresponder-compat
 net-dns/dnsmasq script
 net-firewall/iptables nftables
 net-libs/nghttp2 -systemd
 net-misc/spice-gtk gtk3 usbredir python
-net-wireless/bluez cups user-session
+# an A2DP sink only, no mesh or obex
+net-wireless/bluez -mesh -obex
 net-wireless/hostapd netlink
 sys-apps/dbus systemd dbus user-session X
 sys-fs/cryptsetup -udev
@@ -42,8 +43,8 @@ app-admin/pass wayland -X
 # DDC/CI monitor brightness from the shell, udev rule and i2c group only
 app-misc/ddcutil user-permissions -dbus -usb-monitor -X
 # AirPlay mirroring under sway, no X11 and no vaapi on the arm boards.
-# uxplay renders through GStreamer's autovideosink, which needs waylandsink
-# from gst-plugins-bad and the wayland GL path in gst-plugins-base
+# uxplay renders through waylandsink from gst-plugins-bad, glimagesink
+# stays black on lima
 media-video/uxplay -vaapi -X
 media-libs/gst-plugins-base wayland egl gles2 -X
 media-libs/gst-plugins-bad wayland -X
