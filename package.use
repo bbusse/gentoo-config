@@ -31,6 +31,8 @@ net-wireless/bluez -mesh -obex
 net-wireless/hostapd netlink
 sys-apps/dbus systemd dbus user-session X
 sys-fs/cryptsetup -udev
+# OpenZFS is built into the kernel by linux-kernel-build, userland only
+sys-fs/zfs -modules -rootfs
 sys-apps/systemd audit curl lzma gcrypt importd -policykit qrcode xkb
 www-client/firefox dbus hwaccel system-harfbuzz system-icu system-jpeg system-libevent system-libvpx system-sqlite
 x11-libs/cairo glib opengl X

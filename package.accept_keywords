@@ -35,3 +35,6 @@ x11-misc/i3status **
 x11-misc/py3status-datadog **
 dev-python/datadog-api-client ~amd64 ~arm64
 app-shells/powerline-go ~amd64 ~arm64
+gui-apps/wtype ~amd64 ~arm64
+# The live ebuild, to match the OpenZFS master linux-kernel-build builds in
+=sys-fs/zfs-9999 **

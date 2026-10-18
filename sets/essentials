@@ -7,6 +7,7 @@ app-arch/xz-utils
 net-misc/keychain
 net-misc/socat
 sys-fs/xfsprogs
+sys-fs/zfs
 sys-boot/refind-bin
 sys-apps/gptfdisk
 sys-process/bottom
