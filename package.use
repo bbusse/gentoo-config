@@ -26,8 +26,8 @@ net-dns/dnsmasq script
 net-firewall/iptables nftables
 net-libs/nghttp2 -systemd
 net-misc/spice-gtk gtk3 usbredir python
-# an A2DP sink only, no mesh or obex
-net-wireless/bluez -mesh -obex
+# an A2DP sink, obex for bluez-tools, no mesh
+net-wireless/bluez -mesh obex
 net-wireless/hostapd netlink
 sys-apps/dbus systemd dbus user-session X
 sys-fs/cryptsetup -udev
