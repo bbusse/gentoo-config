@@ -1,0 +1,9 @@
+app-containers/containerd
+app-containers/cri-tools
+net-firewall/conntrack-tools
+net-firewall/iptables
+net-misc/socat
+sys-apps/ethtool
+sys-cluster/kubeadm
+sys-cluster/kubectl
+sys-cluster/kubelet

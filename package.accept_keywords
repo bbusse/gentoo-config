@@ -10,6 +10,13 @@ gui-wm/sway-pixman ~amd64 ~arm64
 mail-client/aerc ~amd64
 media-sound/ncmpcpp **
 sys-cluster/k3s ~amd64 ~arm64
+sys-cluster/kubeadm ~amd64 ~arm64
+sys-cluster/kubelet ~amd64 ~arm64
+sys-cluster/kubectl ~amd64 ~arm64
+app-containers/cri-tools ~amd64 ~arm64
+net-firewall/conntrack-tools ~arm64
+net-libs/libnetfilter_cthelper ~arm64
+net-libs/libnetfilter_cttimeout ~arm64
 sys-firmware/intel-microcode ~amd64
 x11-misc/i3status ~arm64
 x11-misc/py3status **
