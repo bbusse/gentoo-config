@@ -24,6 +24,7 @@ media-video/pipewire bluetooth dbus flatpak gstreamer sound-server ssl zeroconf
 net-dns/avahi -introspection -gtk -qt6 -bookmarks -python -autoipd -gdbm mdnsresponder-compat
 net-dns/dnsmasq script
 net-firewall/iptables nftables
+net-firewall/nftables json
 net-libs/nghttp2 -systemd
 net-misc/spice-gtk gtk3 usbredir python
 # an A2DP sink, obex for bluez-tools, no mesh
