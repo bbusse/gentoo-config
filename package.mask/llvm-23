@@ -1,0 +1,3 @@
+# mesa_clc (panfrost) supports LLVM up to 22, openmp would pull in a second LLVM
+>=llvm-core/llvm-23
+>=llvm-runtimes/openmp-23
