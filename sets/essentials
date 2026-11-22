@@ -12,3 +12,4 @@ sys-boot/refind-bin
 sys-apps/gptfdisk
 sys-process/bottom
 app-shells/brush
+app-metrics/node_exporter
