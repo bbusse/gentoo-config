@@ -1,0 +1,4 @@
+# arm64 only
+# The arm64 profile masks # cpu_flags_arm_neon, which leaves graphene on GCC vector headers that
+# Zig 0.17 translate-c rejects (ghostty, bugs.gentoo.org/986163)
+media-libs/graphene -cpu_flags_arm_neon

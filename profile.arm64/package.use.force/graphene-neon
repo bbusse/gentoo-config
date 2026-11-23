@@ -1,0 +1,2 @@
+# arm64 only, see package.use.mask
+media-libs/graphene cpu_flags_arm_neon

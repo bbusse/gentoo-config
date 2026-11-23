@@ -53,3 +53,5 @@ media-libs/gst-plugins-base wayland egl gles2 -X
 media-libs/gst-plugins-bad wayland -X
 # Spotify Connect through pipewire-pulse like the other audio clients
 media-sound/spotifyd pulseaudio -alsa
+# Pairs with package.mask/llvm-23. llvm-r1 defaults to the newest stable
+*/* LLVM_SLOT: -* 22
